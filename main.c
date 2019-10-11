@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-double circumstance(double rad);
+double circumference(double rad);
 double area(double rad);
 
 //global var to use with other functions as well.
@@ -30,7 +30,7 @@ int main()
             printf("\nEnter the radius of the circle: ");
             scanf("%lf",&radius);
 
-            //offer a selection to find circumstance,area or both
+            //offer a selection to find circumference,area or both
             printf("\n\nDo you want to find the Circumference or Area of the circle?\n");
             printf("\nCircumference press [C]  \nArea press [A] \nBoth [B]\n\n");
             scanf("%s", &choice);
@@ -38,7 +38,7 @@ int main()
 
             if (choice == 'C' || choice == 'c')
             {
-               printf("\nThe circumference : %.2f\n", circumstance(radius));
+               printf("\nThe circumference : %.2f\n", circumference(radius));
             }
 
             else if(choice == 'A' || choice == 'a')
@@ -48,7 +48,7 @@ int main()
 
             else if(choice == 'B' || choice == 'b')
             {
-                printf("\nThe circumference : %.2f\nThe area : %.2f\n", circumstance(radius), area(radius));
+                printf("\nThe circumference : %.2f\nThe area : %.2f\n", circumference(radius), area(radius));
             }
 
             else
@@ -82,7 +82,7 @@ int main()
 
 
 //function to calculate the circumstance
-double circumstance(double rad)
+double circumference(double rad)
 {
     double circ;
 
