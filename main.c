@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <math.h>
 
-double circumference(double rad);
-double area(double rad);
+#define PI 3.14159265358979323846
 
-//global var to use with other functions as well.
-const double pi=3.14159;
+double circumference(double rad);
+double area(double rad)
 
 //main function
 int main()
@@ -86,7 +85,7 @@ double circumference(double rad)
 {
     double circ;
 
-    circ = 2*pi*rad;
+    circ = 2*PI*rad;
 
     return circ;
 }
@@ -97,7 +96,7 @@ double area(double rad)
 {
     double area;
 
-    area = pi * pow(rad, 2);
+    area = PI * pow(rad, 2);
 
     return area;
 }
